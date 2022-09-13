@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 
 /**
@@ -7,7 +7,10 @@ include "main.h"
  *
  * Return: 1 if c is an alphabet else 0
  */
+
 int _isalpha(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	if ((c > 64 && c < 91) || (c > 94 && c < 123))
+		return (1);
+	return (0);
 }
