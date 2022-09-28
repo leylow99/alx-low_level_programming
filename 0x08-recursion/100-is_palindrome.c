@@ -19,7 +19,7 @@ int check(char *s, int start, int size)
 	}
 	else
 	{
-		return(0);
+		return (0);
 	}
 }
 
